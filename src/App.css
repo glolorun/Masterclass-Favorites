@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: row;
+    border: 3px solid black;
+    background-color: dimgrey;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    box-sizing: border-box;
+
+
+    
+
+}
+
+.list img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px; 
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.name {
+
+}
+
+.title {
+    font-size: medium;
+}
+
+.description {
+    font-size: small;
+    word-wrap: break-word;
+}
+

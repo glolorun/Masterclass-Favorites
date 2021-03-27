@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import "./styles.css";
-// import { Fclike, FcLikePlaceholder } from 'react-icons/fa';
+import "./App.css";
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -18,22 +15,28 @@ const App = () => {
     });
 
 
-    
+
   return (
-    <div className="App">
+      <div className="App">
+                              <h1>Masterclass Courses</h1>
+
       {data
         ? data.map(function (data) {
             return (
-              <div className="">
-                <img
+                <div className="list">
+                    
+                <img 
                   src={data.instructor_image_url}
                   alt={data.instructor_name}
-                />
-                <h1> {data.instructor_name}</h1>
-                <h4> {data.title}</h4>
-                <h2>
+                    />
+                    <div>
+                <h1 className="name"> {data.instructor_name}</h1>
+                    <h2 className="title"> {data.title}</h2>
+                    <p className="description">
                   {data.description}
-                </h2>
+                        </p>
+                    </div>
+
               </div>
             );
           })
